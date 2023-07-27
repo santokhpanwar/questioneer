@@ -50,8 +50,16 @@ img {
   justify-content: center; }
 
 .wizard {
-  width: 920px;
-  position: relative; }
+  width: 30%;
+  position: relative;
+  background: #000;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  outline: 3px solid #f02;
+  outline-offset: -10px; }
 
 .wizard > .steps {
   position: absolute;
@@ -112,22 +120,17 @@ img {
 
 .inner {
   display: flex;
-  background: #fff;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); }
+  }
 
 .image-holder {
   width: 40%;
   height: 521px; }
 
 .form-content {
-  width: 60%;
-  padding-top: 65px;
-  padding-left: 51px;
-  padding-right: 51px; }
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .form-header {
   text-align: center; }
@@ -135,18 +138,19 @@ img {
 h3 {
   font-family: "Muli-SemiBold";
   font-size: 22px;
-  color: #453e79;
+  color: #fff;
+  background-color: #f02;
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 1px;
   padding: 5px 15px;
   display: inline-block;
-  border: 1px solid #dad8e4;
-  margin-bottom: 75px; }
+  margin-bottom: 25px;
+width: 100%; }
 
 p {
   font-family: "Muli-SemiBold";
   font-size: 20px;
-  color: #6d7f52;
+  color: #f02;
   text-align: center;
   margin-bottom: 26px; }
 
@@ -240,33 +244,33 @@ textarea.form-control {
     border: none;
     display: inline-flex;
     height: 41px;
-    width: 135px;
+    width: 90px;
     align-items: center;
     background: #e9e0cf;
     font-family: "Muli-SemiBold";
     color: #666;
     cursor: pointer;
     position: relative;
-    padding-left: 28px; }
+    padding-left: 10px; }
     .actions li a:before {
       content: '\f301';
       position: absolute;
       top: 14px;
-      right: 28px;
+      right: 5px;
       font-family: Material-Design-Iconic-Font; }
     .actions li a:hover {
       background: #cfc7b8; }
   .actions li:first-child a {
-    width: 144px;
-    padding-left: 48px; }
+    width: 100px;
+    padding-left: 20px; }
     .actions li:first-child a:before {
       content: '\f2ff';
       position: absolute;
       top: 14px;
-      left: 26px;
+      left: 5px;
       font-family: Material-Design-Iconic-Font; }
   .actions li:nth-child(2) a, .actions li:last-child a {
-    margin-left: 20px; }
+    margin-left: 10px; }
   .actions li:last-child a {
     width: 124px;
     background: #6d7f52;
@@ -283,10 +287,10 @@ textarea.form-control {
     opacity: 0;
     transition: all 1s; }
   .actions li[aria-disabled="false"] ~ li a {
-    background: #6d7f52;
+    background: #f02;
     color: #fff; }
     .actions li[aria-disabled="false"] ~ li a:hover {
-      background: #849963; }
+      background: #f02; }
 
 .checkbox-tick label {
   cursor: pointer;
@@ -365,7 +369,7 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .wizard {
-    max-width: 768px; }
+    width: 50%; }
 
   .image-holder img {
     height: 521px;
@@ -403,18 +407,20 @@ margin-bottom: 20px;
       margin-bottom: 18px; }
 
   .wrapper {
-    height: 900px;
+    height: 550px;
     background: none; }
 
   .checkbox-circle {
     width: 100%; }
 
   .wizard {
-    height: 100%; }
+    height: 90%;
+  width:90% }
     .wizard > .steps {
       right: 50%;
       top: 52%;
-      transform: translateX(50%); }
+      transform: translateX(50%);
+     }
 
   .actions {
     right: 50%;
@@ -429,6 +435,7 @@ input#response {
 }
 .h2-heading {
     text-align: center;
-    color: #000;
+    color: #fff;
+    font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
