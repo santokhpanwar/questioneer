@@ -24,6 +24,7 @@ textarea {
 input, textarea, select, button {
   font-family: "Muli-Regular";
   font-size: 15px; }
+
 p, h1, h2, h3, h4, h5, h6, ul {
   margin: 0; }
 
@@ -370,6 +371,13 @@ textarea.form-control {
     height: 521px;
     object-fit: cover; } }
 @media (max-width: 767px) {
+.h2-heading {
+    font-size: 18px;
+}
+h3 {
+letter-spacing: 2px;
+margin-bottom: 20px;
+}
   .inner {
     display: block;
     box-shadow: none;
@@ -395,7 +403,7 @@ textarea.form-control {
       margin-bottom: 18px; }
 
   .wrapper {
-    height: 1201px;
+    height: 900px;
     background: none; }
 
   .checkbox-circle {
@@ -418,5 +426,9 @@ input#response {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #8d8d8d;
+}
+.h2-heading {
+    text-align: center;
+    color: #000;
 }
 /*# sourceMappingURL=style.css.map */
